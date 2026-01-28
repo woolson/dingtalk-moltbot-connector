@@ -40,11 +40,11 @@ graph LR
 
 ```bash
 # 远程安装
-moltbot plugins install https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector.git
+clawdbot plugins install https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector.git
 
 # 或本地开发模式
 git clone https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector.git
-moltbot plugins install -l ./dingtalk-moltbot-connector
+clawdbot plugins install -l ./dingtalk-moltbot-connector
 ```
 
 ### 2. 配置
@@ -72,14 +72,14 @@ moltbot plugins install -l ./dingtalk-moltbot-connector
 ### 3. 重启 Gateway
 
 ```bash
-moltbot gateway restart
+clawdbot gateway restart
 ```
 
 验证：
 
 ```bash
-moltbot plugins list               # 确认 dingtalk-connector 已加载
-moltbot gateway rpc dingtalk.probe  # 检查连通性
+clawdbot plugins list               # 确认 dingtalk-connector 已加载
+clawdbot gateway rpc dingtalk.probe  # 检查连通性
 ```
 
 ---
