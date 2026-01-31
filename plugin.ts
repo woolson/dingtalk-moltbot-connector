@@ -304,7 +304,7 @@ async function processLocalImages(
 // ============ AI Card Streaming ============
 
 const DINGTALK_API = 'https://api.dingtalk.com';
-const AI_CARD_TEMPLATE_ID = '382e4302-551d-4880-bf29-a30acfab2e71.schema';
+const AI_CARD_TEMPLATE_ID = 'a414a102-ee9a-44ef-85c9-a433b868b726.schema';
 
 // flowStatus 值与 Python SDK AICardStatus 一致（cardParamMap 的值必须是字符串）
 const AICardStatus = {
