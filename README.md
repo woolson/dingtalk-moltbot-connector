@@ -9,6 +9,7 @@
 - ✅ **超时自动新会话** - 默认 30 分钟无活动自动开启新对话
 - ✅ **手动新会话** - 发送 `/new` 或 `新会话` 清空对话历史
 - ✅ **图片自动上传** - 本地图片路径自动上传到钉钉
+- ✅ **主动发送消息** - 支持主动给钉钉个人或群发送消息
 
 ## 架构
 
@@ -63,7 +64,7 @@ openclaw plugins install -l .
       "enabled": true,
       "clientId": "dingxxxxxxxxx",       // 钉钉 AppKey
       "clientSecret": "your_secret_here", // 钉钉 AppSecret
-      "gatewayToken": "",                 // 可选：Gateway 认证 token
+      "gatewayToken": "",                 // 可选：Gateway 认证 token, opencode.json配置中 gateway.auth.token 的值 
       "gatewayPassword": "",              // 可选：Gateway 认证 password（与 token 二选一）
       "sessionTimeout": 1800000           // 可选：会话超时(ms)，默认 30 分钟
     }
@@ -160,7 +161,7 @@ dingtalk-moltbot-connector/
 
 <img width="895" height="257" alt="image" src="https://github.com/user-attachments/assets/5d6227f0-b4b1-41c4-ad88-82a7ec0ade1e" />
 
-检查 `~/.openclaw/openclaw.json` 中的鉴权 token/password 是否正确：
+检查 `~/.openclaw/openclaw.json` 中的gateway.auth鉴权的 token/password 是否正确：
 
 <img width="1322" height="604" alt="image" src="https://github.com/user-attachments/assets/b9f97446-5035-4325-a0dd-8f8e32f7b86a" />
 
